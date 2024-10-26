@@ -33,3 +33,18 @@ const showIncome= ()=>{
     }
 
 }
+
+const saveUser = ()=>{
+
+    event.preventDefault()
+    let user = inputUser.value
+    window.localStorage.setItem('username', user)
+}
+
+const getUser = ()=>{
+
+    
+    let user = window.localStorage.getItemItem('username', user)
+    setUser.innerHTML= user
+}
+
